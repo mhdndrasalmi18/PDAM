@@ -1,0 +1,494 @@
+INFO - 2024-01-10 04:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 04:09:45 --> mysqli_sql_exception: Table 'dbmasjid2110018.tbl_donatur' doesn't exist in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(51): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(13): App\Models\ModelKasmasuk->getDonatur()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-10 04:09:45 --> Table 'dbmasjid2110018.tbl_donatur' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_donatur`', [], false)
+ 2 APPPATH\Models\ModelKasmasuk.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasmasuk.php(13): App\Models\ModelKasmasuk->getDonatur()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 11:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 04:37:28 --> mysqli_sql_exception: Unknown column 'no_hp' in 'field list' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelDonatur.php(16): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Donatur.php(37): App\Models\ModelDonatur->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Donatur->save()
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-10 04:37:28 --> Unknown column 'no_hp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `donatur` (`iddonatur`, `nama`, `alamat`, `no_hp`) VALUES (:iddonatur:, :nama:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Models\ModelDonatur.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Donatur.php(37): App\Models\ModelDonatur->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 04:37:56 --> Undefined array key "no_hp"
+in APPPATH\Views\donatur\v_donatur.php on line 54.
+ 1 APPPATH\Views\donatur\v_donatur.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_hp"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php', 54)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Donatur/v_donatur', [], true)
+ 5 APPPATH\Controllers\Donatur.php(13): view('Donatur/v_donatur', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+CRITICAL - 2024-01-10 04:38:16 --> Undefined array key "id_donatur"
+in APPPATH\Views\donatur\v_donatur.php on line 64.
+ 1 APPPATH\Views\donatur\v_donatur.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_donatur"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Donatur/v_donatur', [], true)
+ 5 APPPATH\Controllers\Donatur.php(13): view('Donatur/v_donatur', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 04:38:42 --> Undefined array key "id_donatur"
+in APPPATH\Views\donatur\v_donatur.php on line 64.
+ 1 APPPATH\Views\donatur\v_donatur.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_donatur"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Donatur/v_donatur', [], true)
+ 5 APPPATH\Controllers\Donatur.php(13): view('Donatur/v_donatur', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+CRITICAL - 2024-01-10 04:39:00 --> Undefined array key "id_donatur"
+in APPPATH\Views\donatur\v_donatur.php on line 64.
+ 1 APPPATH\Views\donatur\v_donatur.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_donatur"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Donatur/v_donatur', [], true)
+ 5 APPPATH\Controllers\Donatur.php(13): view('Donatur/v_donatur', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 04:39:06 --> Undefined array key "id_donatur"
+in APPPATH\Views\donatur\v_donatur.php on line 64.
+ 1 APPPATH\Views\donatur\v_donatur.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_donatur"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\donatur\\v_donatur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Donatur/v_donatur', [], true)
+ 5 APPPATH\Controllers\Donatur.php(13): view('Donatur/v_donatur', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 04:40:30 --> mysqli_sql_exception: Unknown column 'jabatan' in 'field list' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `donatur...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `donatur...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `donatur...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `donatur...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelDonatur.php(25): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Donatur.php(56): App\Models\ModelDonatur->updatedonatur(Array, 'D01')
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Donatur->update()
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-10 04:40:30 --> Unknown column 'jabatan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `donatur` SET `nama` = :nama:, `jabatan` = :jabatan:, `alamat` = :alamat:, `no_hp` = :no_hp:
+WHERE `iddonatur` = :iddonatur:', [...], false)
+ 2 APPPATH\Models\ModelDonatur.php(25): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 3 APPPATH\Controllers\Donatur.php(56): App\Models\ModelDonatur->updatedonatur([...], 'D01')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 04:40:56 --> mysqli_sql_exception: Unknown column 'jabatan' in 'field list' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `donatur...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `donatur...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `donatur...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `donatur...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelDonatur.php(25): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Donatur.php(56): App\Models\ModelDonatur->updatedonatur(Array, 'D01')
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Donatur->update()
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-10 04:40:56 --> Unknown column 'jabatan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `donatur` SET `nama` = :nama:, `jabatan` = :jabatan:, `alamat` = :alamat:, `no_hp` = :no_hp:
+WHERE `iddonatur` = :iddonatur:', [...], false)
+ 2 APPPATH\Models\ModelDonatur.php(25): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 3 APPPATH\Controllers\Donatur.php(56): App\Models\ModelDonatur->updatedonatur([...], 'D01')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 04:41:21 --> mysqli_sql_exception: Unknown column 'no_hp' in 'field list' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `donatur...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `donatur...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `donatur...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `donatur...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelDonatur.php(25): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Donatur.php(55): App\Models\ModelDonatur->updatedonatur(Array, 'D01')
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Donatur->update()
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-10 04:41:21 --> Unknown column 'no_hp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `donatur` SET `nama` = :nama:, `alamat` = :alamat:, `no_hp` = :no_hp:
+WHERE `iddonatur` = :iddonatur:', [...], false)
+ 2 APPPATH\Models\ModelDonatur.php(25): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 3 APPPATH\Controllers\Donatur.php(55): App\Models\ModelDonatur->updatedonatur([...], 'D01')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 04:56:41 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 63.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 63)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+CRITICAL - 2024-01-10 04:57:44 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 63.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 63)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 04:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 04:58:05 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 63.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 63)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+CRITICAL - 2024-01-10 04:59:26 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 65.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 04:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 04:59:30 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 65.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 05:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 05:03:27 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 65.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+CRITICAL - 2024-01-10 05:05:18 --> Undefined array key "kas_keluar"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 70.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kas_keluar"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 05:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 05:16:28 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_m...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_m...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_m...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_m...')
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-10')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2024-01-10 05:16:28 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_masjid,nama,tanggal,ket,kas_masuk,jenis_kas,status from tbl_kas_masjid where tanggal >=\'2024-01-10\' and tanggal <=\'2024-01-10\' and status=\'Masuk\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-10')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 05:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 05:17:26 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_m...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_m...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_m...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_m...')
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-10')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2024-01-10 05:17:26 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_masjid,nama,tanggal,ket,kas_masuk,jenis_kas,status from tbl_kas_masjid where tanggal >=\'2024-01-10\' and tanggal <=\'2024-01-10\' and status=\'Masuk\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-10')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 05:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 05:21:15 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_m...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_m...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_m...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_m...')
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-10')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2024-01-10 05:21:15 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_masjid,nama,tanggal,ket,kas_masuk,jenis_kas,status from tbl_kas_masjid where tanggal >=\'2024-01-10\' and tanggal <=\'2024-01-10\' and status=\'Masuk\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-10')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 05:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 05:28:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'status='Masuk'' at line 1 in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_m...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_m...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_m...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_m...')
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-12')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2024-01-10 05:28:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'status='Masuk'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select id_kas_masjid,nama,tanggal,ket,kas_masuk,jenis_kas,status from tbl_kas_masjid join donatur on tbl_kas_masjid.iddonaturmasjid=donatur.iddonatur where tanggal >=\'2024-01-10\' and tanggal <=\'2024-01-12\' status=\'Masuk\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(83): App\Models\ModelKasmasuk->getLaporanperperiode('2024-01-10', '2024-01-12')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 05:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 05:54:55 --> Undefined array key "kas_keluar"
+in APPPATH\Views\kasmasuk\v_kasmasuk.php on line 67.
+ 1 APPPATH\Views\kasmasuk\v_kasmasuk.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kas_keluar"', 'D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kasmasuk/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(14): view('Kasmasuk/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-10 05:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

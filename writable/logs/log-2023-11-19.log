@@ -1,0 +1,13 @@
+CRITICAL - 2023-11-19 18:35:59 --> Call to undefined function ase_url()
+in APPPATH\Views\layout\main.php on line 36.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/main', [], true)
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/menu', [], true)
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('user/v_user', [], true)
+ 6 APPPATH\Controllers\User.php(13): view('user/v_user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')

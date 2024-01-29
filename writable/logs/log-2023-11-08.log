@@ -1,0 +1,231 @@
+ERROR - 2023-11-08 00:02:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'penjualan', 3306, '', 0)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#7 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#3 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-08 00:02:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `baju` (`kodebaju`, `jenis`, `harga`, `jumlah`, `total`) VALUES (:kodebaju:, :jenis:, :harga:, :jumlah:, :total:)', [...], false)
+ 3 APPPATH\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-08 00:04:14 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'penjualan' in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'penjualan', 3306, '', 0)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#7 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'penjualan' in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#3 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-08 00:04:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'penjualan'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `baju` (`kodebaju`, `jenis`, `harga`, `jumlah`, `total`) VALUES (:kodebaju:, :jenis:, :harga:, :jumlah:, :total:)', [...], false)
+ 3 APPPATH\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-08 00:04:38 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'penjualan' in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'penjualan', 3306, '', 0)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#7 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'penjualan' in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#3 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-08 00:04:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'penjualan'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `baju` (`kodebaju`, `jenis`, `harga`, `jumlah`, `total`) VALUES (:kodebaju:, :jenis:, :harga:, :jumlah:, :total:)', [...], false)
+ 3 APPPATH\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-08 00:05:28 --> mysqli_sql_exception: Duplicate entry 'K001' for key 'PRIMARY' in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#7 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-08 00:05:28 --> Duplicate entry 'K001' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `baju` (`kodebaju`, `jenis`, `harga`, `jumlah`, `total`) VALUES (:kodebaju:, :jenis:, :harga:, :jumlah:, :total:)', [...], false)
+ 2 APPPATH\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-08 00:05:37 --> mysqli_sql_exception: Duplicate entry 'K001' for key 'PRIMARY' in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#7 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-08 00:05:37 --> Duplicate entry 'K001' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `baju` (`kodebaju`, `jenis`, `harga`, `jumlah`, `total`) VALUES (:kodebaju:, :jenis:, :harga:, :jumlah:, :total:)', [...], false)
+ 2 APPPATH\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-08 00:22:20 --> mysqli_sql_exception: Duplicate entry 'K001' for key 'PRIMARY' in C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\xampp\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\xampp\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\latihan1\app\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+#6 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+#7 C:\xampp\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-08 00:22:20 --> Duplicate entry 'K001' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `baju` (`kodebaju`, `jenis`, `harga`, `jumlah`, `total`) VALUES (:kodebaju:, :jenis:, :harga:, :jumlah:, :total:)', [...], false)
+ 2 APPPATH\Controllers\quiz.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\quiz->simpan1()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quiz))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-08 04:23:09 --> Invalid file: "layout/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 APPPATH\Controllers\layout.php(11): view('layout/main')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\layout->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layout))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-08 04:23:25 --> Invalid file: "layout/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 APPPATH\Controllers\layout.php(11): view('layout/main')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\layout->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layout))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-08 04:23:28 --> Invalid file: "layout/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 APPPATH\Controllers\layout.php(11): view('layout/main')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\layout->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layout))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-08 04:53:53 --> Undefined property: CodeIgniter\View\View::$rendersection
+in APPPATH\Views\layout\main.php on line 52.
+ 1 APPPATH\Views\layout\main.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$rendersection', 'C:\\xampp\\htdocs\\latihan1\\app\\Views\\layout\\main.php', 52)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\latihan1\\app\\Views\\layout\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/main', [], true)
+ 5 APPPATH\Controllers\layout.php(11): view('layout/main')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\layout->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layout))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-08 04:54:32 --> Undefined property: CodeIgniter\View\View::$rendersection
+in APPPATH\Views\layout\main.php on line 54.
+ 1 APPPATH\Views\layout\main.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$rendersection', 'C:\\xampp\\htdocs\\latihan1\\app\\Views\\layout\\main.php', 54)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\latihan1\\app\\Views\\layout\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/main', [], true)
+ 5 APPPATH\Controllers\layout.php(11): view('layout/main')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\layout->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layout))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')

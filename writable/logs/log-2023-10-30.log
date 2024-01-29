@@ -1,0 +1,9 @@
+CRITICAL - 2023-10-30 15:37:05 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 34.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('/', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('/')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\latihan1\\public\\index.php')

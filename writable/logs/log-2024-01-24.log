@@ -1,0 +1,1051 @@
+INFO - 2024-01-24 04:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 04:07:07 --> Unmatched '}'
+in APPPATH\Views\layout\menu.php on line 91.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/menu', [], true)
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/beranda', [], true)
+ 4 APPPATH\Controllers\layout.php(11): view('layout/beranda')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\layout->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layout))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 04:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 04:08:03 --> mysqli_sql_exception: Table 'quiz2110018.tbl_pelanggan' doesn't exist in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelPelanggan.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Pelanggan.php(13): App\Models\ModelPelanggan->getPelanggan()
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\Pelanggan->index()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 04:08:03 --> Table 'quiz2110018.tbl_pelanggan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_Pelanggan`', [], false)
+ 2 APPPATH\Models\ModelPelanggan.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pelanggan.php(13): App\Models\ModelPelanggan->getPelanggan()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelanggan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 04:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 04:16:12 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `Ta...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ta...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ta...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ta...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTarif.php(16): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Tarif.php(25): App\Models\ModelTarif->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\Tarif->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarif))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 04:16:12 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Tarif` (`id`, `nama`, `nohp`, `alamat`) VALUES (:id:, :nama:, :nohp:, :alamat:)', [...], false)
+ 2 APPPATH\Models\ModelTarif.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Tarif.php(25): App\Models\ModelTarif->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Tarif->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarif))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 04:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 04:16:44 --> Undefined array key "id"
+in APPPATH\Views\tarif\v_tarif.php on line 61.
+ 1 APPPATH\Views\tarif\v_tarif.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\tarif\\v_tarif.php', 61)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\tarif\\v_tarif.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Tarif/v_Tarif', [], true)
+ 5 APPPATH\Controllers\Tarif.php(14): view('Tarif/v_Tarif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Tarif->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarif))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 04:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 04:47:03 --> mysqli_sql_exception: Table 'quiz2110018.tbl_user' doesn't exist in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelUser.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Views\transaksi\v_transaksi.php(56): App\Models\ModelUser->getUser()
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\View\View.php(226): include('D:\\KULIAH\\Semes...')
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Common.php(1188): CodeIgniter\View\View->render('transaksi/v_tra...', Array, true)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(15): view('transaksi/v_tra...', Array)
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#11 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#12 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#15 {main}
+CRITICAL - 2024-01-24 04:47:03 --> Table 'quiz2110018.tbl_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`', [], false)
+ 2 APPPATH\Models\ModelUser.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Views\transaksi\v_transaksi.php(56): App\Models\ModelUser->getUser()
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_transaksi.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('transaksi/v_transaksi', [], true)
+ 7 APPPATH\Controllers\Transaksi.php(15): view('transaksi/v_transaksi', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+CRITICAL - 2024-01-24 04:47:50 --> Undefined variable $data_donatur
+in APPPATH\Views\transaksi\v_transaksi.php on line 150.
+ 1 APPPATH\Views\transaksi\v_transaksi.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_donatur', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_transaksi.php', 150)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_transaksi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('transaksi/v_transaksi', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(15): view('transaksi/v_transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 04:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:09:42 --> mysqli_sql_exception: Table 'quiz2110018.transkasi' doesn't exist in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(43): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:09:42 --> Table 'quiz2110018.transkasi' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transkasi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(43): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:17:45 --> mysqli_sql_exception: Table 'quiz2110018.transkasi' doesn't exist in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(43): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:17:45 --> Table 'quiz2110018.transkasi' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transkasi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(43): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:36:02 --> mysqli_sql_exception: Table 'quiz2110018.transkasi' doesn't exist in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(43): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:36:02 --> Table 'quiz2110018.transkasi' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transkasi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(43): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:37:12 --> mysqli_sql_exception: Table 'quiz2110018.transkasi' doesn't exist in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:37:12 --> Table 'quiz2110018.transkasi' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transkasi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:39:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:39:56 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:40:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:40:19 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:45:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:45:55 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 05:48:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:48:32 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:48:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:48:40 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 05:49:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:49:57 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:52:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:52:17 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:55:37 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:55:37 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:56:47 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:56:47 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`idpel`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 05:58:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`idharga`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:58:36 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`idharga`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 05:58:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`idharga`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE) in D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\KULIAH\Semester 5\WEB 2\quiz2110018\app\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData(Array)
+#6 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->save()
+#7 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#8 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+CRITICAL - 2024-01-24 05:58:45 --> Cannot add or update a child row: a foreign key constraint fails (`quiz2110018`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`idharga`) REFERENCES `tarif` (`idtarif`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`idpel`, `idharga`, `meterbulanini`, `meterbulanlalu`, `tglbayar`) VALUES (:idpel:, :idharga:, :meterbulanini:, :meterbulanlalu:, :tglbayar:)', [...], false)
+ 2 APPPATH\Models\ModelTransaksi.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Transaksi.php(30): App\Models\Modeltransaksi->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 05:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 05:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:05:02 --> Undefined variable $tgla
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 30.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgla', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(72): view('/transaksi/v_laporanperperiode')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:06:53 --> Undefined variable $tgla
+in APPPATH\Views\transaksi\v_cetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\transaksi\v_cetaklaporanperperiode.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgla', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_cetaklaporanperperiode.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_cetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_cetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(72): view('/transaksi/v_cetaklaporanperperiode')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:06:58 --> Undefined variable $tgla
+in APPPATH\Views\transaksi\v_cetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\transaksi\v_cetaklaporanperperiode.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgla', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_cetaklaporanperperiode.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_cetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_cetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(72): view('/transaksi/v_cetaklaporanperperiode')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:12:44 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-24 06:12:49 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:12:54 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-24 06:15:23 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:18:13 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:19:44 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-24 06:20:14 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 87.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:20:47 --> Cannot redeclare App\Controllers\transaksi::cetaklaporanperperiode()
+in APPPATH\Controllers\Transaksi.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:21:07 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Transaksi.php on line 89.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('Transaksi/laporanperperiode', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Transaksi/laporanperperiode')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Transaksi/laporanperperiode')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:22:19 --> Undefined variable $tgla
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 30.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgla', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(72): view('/transaksi/v_laporanperperiode')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+CRITICAL - 2024-01-24 06:22:43 --> Undefined variable $tgla
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 30.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgla', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(72): view('/transaksi/v_laporanperperiode')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+CRITICAL - 2024-01-24 06:22:49 --> Undefined variable $tgla
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 30.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgla', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(72): view('/transaksi/v_laporanperperiode')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:23:44 --> Cannot redeclare App\Models\Modeltransaksi::getLaporanperperiode()
+in APPPATH\Models\ModelTransaksi.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:24:07 --> Cannot redeclare App\Models\Modeltransaksi::getLaporanperperiode()
+in APPPATH\Models\ModelTransaksi.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:24:56 --> Invalid file: "/transaksi/vlaporantransaksi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/transaksi/vlaporantransaksi.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/vlaporantransaksi', [], true)
+ 3 APPPATH\Controllers\Transaksi.php(85): view('/transaksi/vlaporantransaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+CRITICAL - 2024-01-24 06:25:29 --> Undefined variable $tgla
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 30.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgla', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(85): view('/transaksi/v_laporanperperiode')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->laporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:25:53 --> Cannot redeclare App\Models\Modeltransaksi::getLaporanperperiode()
+in APPPATH\Models\ModelTransaksi.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-24 06:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:27:20 --> Invalid file: "/transaksi/vcetaklaporanperperiode.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/transaksi/vcetaklaporanperperiode.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/vcetaklaporanperperiode', [], true)
+ 3 APPPATH\Controllers\Transaksi.php(110): view('/transaksi/vcetaklaporanperperiode', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->cetaklaporanperperiode()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:27:53 --> Undefined array key "kas_masuk"
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 55.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kas_masuk"', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(110): view('/transaksi/v_laporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:28:00 --> Undefined array key "kas_masuk"
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 55.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kas_masuk"', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(110): view('/transaksi/v_laporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-24 06:32:05 --> Undefined array key "transaksi"
+in APPPATH\Views\transaksi\v_laporanperperiode.php on line 59.
+ 1 APPPATH\Views\transaksi\v_laporanperperiode.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "transaksi"', 'D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\app\\Views\\transaksi\\v_laporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/transaksi/v_laporanperperiode', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(110): view('/transaksi/v_laporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 06:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 06:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 09:04:40 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'quiz2110018' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'quiz2110018', 3306, '', 0)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#4 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#7 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'quiz2110018' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#3 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#4 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#9 {main}
+CRITICAL - 2024-01-24 09:04:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'quiz2110018'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransaksi,nama,tarif,meterbulanini,meterbulanlalu,tglbayar FROM transaksi JOIN pelanggan ON idpel=id JOIN tarif ON idharga=idtarif')
+ 3 APPPATH\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 09:05:47 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'quiz' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'quiz', 3306, '', 0)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#4 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#7 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'quiz' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#3 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#4 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#9 {main}
+CRITICAL - 2024-01-24 09:05:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'quiz'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransaksi,nama,tarif,meterbulanini,meterbulanlalu,tglbayar FROM transaksi JOIN pelanggan ON idpel=id JOIN tarif ON idharga=idtarif')
+ 3 APPPATH\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 09:06:03 --> mysqli_sql_exception: Unknown column 'idtransaksi' in 'field list' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('select idtransa...', 0)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select idtransa...')
+#2 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select idtransa...')
+#3 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#4 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#7 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#10 {main}
+CRITICAL - 2024-01-24 09:06:03 --> Unknown column 'idtransaksi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransaksi,nama,tarif,meterbulanini,meterbulanlalu,tglbayar FROM transaksi JOIN pelanggan ON idpel=id JOIN tarif ON idharga=idtarif')
+ 2 APPPATH\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 09:06:57 --> mysqli_sql_exception: Unknown column 'meterbulanini' in 'field list' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('select idtransa...', 0)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select idtransa...')
+#2 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select idtransa...')
+#3 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#4 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#7 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#10 {main}
+CRITICAL - 2024-01-24 09:06:57 --> Unknown column 'meterbulanini' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransaksi,nama,tarif,meterbulanini,meterbulanlalu,tglbayar FROM transaksi JOIN pelanggan ON idpel=id JOIN tarif ON idharga=idtarif')
+ 2 APPPATH\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 09:07:30 --> mysqli_sql_exception: Unknown column 'id' in 'on clause' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('select idtransa...', 0)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select idtransa...')
+#2 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select idtransa...')
+#3 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#4 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#7 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#10 {main}
+CRITICAL - 2024-01-24 09:07:30 --> Unknown column 'id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransaksi,nama,tarif,meterbulanini,meterbulanlalu,tglbayar FROM transaksi JOIN pelanggan ON idpel=id JOIN tarif ON idharga=idtarif')
+ 2 APPPATH\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+ERROR - 2024-01-24 09:07:53 --> mysqli_sql_exception: Unknown column 'idpel' in 'on clause' in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('select idtransa...', 0)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select idtransa...')
+#2 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select idtransa...')
+#3 E:\semester 1\quiz2110018\app\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransa...')
+#4 E:\semester 1\quiz2110018\app\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+#5 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\transaksi->index()
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+#7 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#10 {main}
+CRITICAL - 2024-01-24 09:07:53 --> Unknown column 'idpel' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelTransaksi.php(11): CodeIgniter\Database\BaseConnection->query('select idtransaksi,nama,tarif,meterbulanini,meterbulanlalu,tglbayar FROM transaksi JOIN pelanggan ON idpel=id JOIN tarif ON idharga=idtarif')
+ 2 APPPATH\Controllers\Transaksi.php(12): App\Models\Modeltransaksi->gettransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+CRITICAL - 2024-01-24 09:08:13 --> Undefined property: stdClass::$klass
+in APPPATH\Views\transaksi\v_transaksi.php on line 145.
+ 1 APPPATH\Views\transaksi\v_transaksi.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$klass', 'E:\\semester 1\\quiz2110018\\app\\Views\\transaksi\\v_transaksi.php', 145)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\semester 1\\quiz2110018\\app\\Views\\transaksi\\v_transaksi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('transaksi/v_transaksi', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(15): view('transaksi/v_transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 09:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-24 09:23:07 --> mysqli_sql_exception: Table 'dbquiz.tbl_tarif' doesn't exist in E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\semester 1\quiz2110018\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `tb...', 0)
+#1 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 E:\semester 1\quiz2110018\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 E:\semester 1\quiz2110018\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 E:\semester 1\quiz2110018\app\Models\ModelTarif.php(20): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 E:\semester 1\quiz2110018\app\Controllers\Tarif.php(30): App\Models\ModelTarif->deleteTarif('')
+#6 E:\semester 1\quiz2110018\system\CodeIgniter.php(919): App\Controllers\Tarif->delete()
+#7 E:\semester 1\quiz2110018\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarif))
+#8 E:\semester 1\quiz2110018\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\semester 1\quiz2110018\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\semester 1\quiz2110018\system\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\q...')
+#11 {main}
+CRITICAL - 2024-01-24 09:23:07 --> Table 'dbquiz.tbl_tarif' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_Tarif`
+WHERE `id_Tarif` = :id_Tarif:', [...], false)
+ 2 APPPATH\Models\ModelTarif.php(20): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Tarif.php(30): App\Models\ModelTarif->deleteTarif('')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Tarif->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarif))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\semester 1\\quiz2110018\\public\\index.php')
+INFO - 2024-01-24 09:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 09:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

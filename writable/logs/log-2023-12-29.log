@@ -1,0 +1,53 @@
+INFO - 2023-12-29 08:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-29 08:23:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbmasjid2110018', 3306, '', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelUser.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Login.php(18): App\Models\ModelUser->cek_login('Zikri')
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Login->ceklogin()
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelUser.php(30): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Login.php(18): App\Models\ModelUser->cek_login('Zikri')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Login->ceklogin()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2023-12-29 08:23:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `nama_user` = :nama_user:', [...], false)
+ 3 APPPATH\Models\ModelUser.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(18): App\Models\ModelUser->cek_login('Zikri')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->ceklogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2023-12-29 08:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-29 08:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

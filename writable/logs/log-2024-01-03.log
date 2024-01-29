@@ -1,0 +1,250 @@
+INFO - 2024-01-03 03:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 03:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 03:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 03:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 03:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 03:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 03:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 03:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 04:32:42 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Kasmasuk.php on line 86.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('kasmasuk/laporanperperiode', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('kasmasuk/laporanperperiode')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('kasmasuk/laporanperperiode')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 04:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 04:38:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form tbl_kas_masjid where tanggal >='2023-12-01' and tanggal <='2024-01-27'' at line 1 in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('select * form t...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * form t...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * form t...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select * form t...')
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(78): App\Models\ModelKasmasuk->getLaporanperperiode('2023-12-01', '2024-01-27')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2024-01-03 04:38:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form tbl_kas_masjid where tanggal >='2023-12-01' and tanggal <='2024-01-27'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(33): CodeIgniter\Database\BaseConnection->query('select * form tbl_kas_masjid where tanggal >=\'2023-12-01\' and tanggal <=\'2024-01-27\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(78): App\Models\ModelKasmasuk->getLaporanperperiode('2023-12-01', '2024-01-27')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 04:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 04:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 05:18:57 --> mysqli_sql_exception: Unknown column 'jeniskas' in 'where clause' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from t...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(40): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(95): App\Models\ModelKasmasuk->getLaporanperperiodeperjenis('', '', 'Masjid')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2024-01-03 05:18:57 --> Unknown column 'jeniskas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(40): CodeIgniter\Database\BaseConnection->query('select * from tbl_kas_masjid where tanggal >=\'\' and tanggal <=\'\' and jeniskas=\'Masjid\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(95): App\Models\ModelKasmasuk->getLaporanperperiodeperjenis('', '', 'Masjid')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 05:19:18 --> mysqli_sql_exception: Unknown column 'jeniskas' in 'where clause' in D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from t...', 0)
+#1 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Models\ModelKasmasuk.php(40): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 D:\KULIAH\Semester 5\WEB 2\latihan1\app\Controllers\Kasmasuk.php(95): App\Models\ModelKasmasuk->getLaporanperperiodeperjenis('2023-12-01', '2023-12-31', 'Masjid')
+#5 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+#6 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 D:\KULIAH\Semester 5\WEB 2\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\KULIAH\Semester 5\WEB 2\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\KULIAH\Semester 5\WEB 2\latihan1\system\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semes...')
+#10 {main}
+CRITICAL - 2024-01-03 05:19:18 --> Unknown column 'jeniskas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(40): CodeIgniter\Database\BaseConnection->query('select * from tbl_kas_masjid where tanggal >=\'2023-12-01\' and tanggal <=\'2023-12-31\' and jeniskas=\'Masjid\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(95): App\Models\ModelKasmasuk->getLaporanperperiodeperjenis('2023-12-01', '2023-12-31', 'Masjid')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 05:20:15 --> Call to a member function getResultArray() on null
+in APPPATH\Controllers\Kasmasuk.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+CRITICAL - 2024-01-03 05:27:20 --> Invalid file: "kas/v_cetaklaporanperperiodeperjeniskas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas/v_cetaklaporanperperiodeperjeniskas.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kas/v_cetaklaporanperperiodeperjeniskas', [], true)
+ 3 APPPATH\Controllers\Kasmasuk.php(102): view('kas/v_cetaklaporanperperiodeperjeniskas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 05:27:58 --> Invalid file: "kas/v_cetaklaporanperperiodeperjeniskas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas/v_cetaklaporanperperiodeperjeniskas.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kas/v_cetaklaporanperperiodeperjeniskas', [], true)
+ 3 APPPATH\Controllers\Kasmasuk.php(102): view('kas/v_cetaklaporanperperiodeperjeniskas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 05:31:40 --> Invalid file: "kas/v_cetaklaporanperperiodeperjeniskas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas/v_cetaklaporanperperiodeperjeniskas.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kas/v_cetaklaporanperperiodeperjeniskas', [], true)
+ 3 APPPATH\Controllers\Kasmasuk.php(102): view('kas/v_cetaklaporanperperiodeperjeniskas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-03 05:33:29 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasuk\v_cetaklaporanperperiodeperjeniskas.php on line 30.
+ 1 APPPATH\Views\kasmasuk\v_cetaklaporanperperiodeperjeniskas.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_cetaklaporanperperiodeperjeniskas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasuk/v_cetaklaporanperperiodeperjeniskas', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(102): view('kasmasuk/v_cetaklaporanperperiodeperjeniskas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+WARNING - 2024-01-03 05:33:29 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasuk\v_cetaklaporanperperiodeperjeniskas.php on line 30.
+ 1 APPPATH\Views\kasmasuk\v_cetaklaporanperperiodeperjeniskas.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\app\\Views\\kasmasuk\\v_cetaklaporanperperiodeperjeniskas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasuk/v_cetaklaporanperperiodeperjeniskas', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(102): view('kasmasuk/v_cetaklaporanperperiodeperjeniskas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiodeperjeniskas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 05:49:06 --> Invalid file: "Kaskeluar/vlaporankaskeluar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Kaskeluar/vlaporankaskeluar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Kaskeluar/vlaporankaskeluar', [], true)
+ 3 APPPATH\Controllers\Kaskeluar.php(71): view('Kaskeluar/vlaporankaskeluar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kaskeluar->laporanperperiode()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kaskeluar))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 05:50:46 --> Class "App\Controllers\ModelKasmasuk" not found
+in APPPATH\Controllers\Kaskeluar.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kaskeluar->cetaklaporanperperiode()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kaskeluar))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\KULIAH\\Semester 5\\WEB 2\\latihan1\\public\\index.php')
+INFO - 2024-01-03 05:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 05:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
